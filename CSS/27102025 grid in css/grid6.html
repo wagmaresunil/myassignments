@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid6</title>
+        
+    <style>
+        a{
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+      background-color: lightgray;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            height: 100vh;
+            gap: 20px;
+        }
+        .child1 {
+             background-color: red;
+             grid-column: 1/3;
+             grid-row: 1fr 1fr 2fr 1fr;
+        }
+        .child2 {
+            background-color: pink;
+        }
+        .child3 {
+            background-color: lightgoldenrodyellow;
+        }
+        .child4 {
+            background-color: yellow;
+        }
+        .child5 {
+            background-color: greenyellow;
+        }
+        .child6 {
+            background-color: crimson;
+            grid-column: 3/4;
+        }
+           .child7 {
+            background-color: darkmagenta;
+            grid-column: 1/3;
+            grid-row: 3/5;
+        }
+        .child8 {
+            background-color: darkgreen;
+            grid-column: 3/4;
+        }
+        .child9 {
+            background-color: orange;
+        }
+        .child10 {
+            background-color: lightgreen;
+        }
+        .child11 {
+            background-color: gold;
+            grid-column: 1/4;
+        }
+        .child12 {
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Home</a>
+    <div class="parent">
+    <div class="child1">Tomato</div>
+    <div class="child2">Onion</div>
+    <div class="child3">Potato</div>
+    <div class="child4">Capsicum</div>
+    <div class="child5">Cucumber</div>
+    <div class="child6">Beetroot</div>
+    <div class="child7">Brinjal</div>
+    <div class="child8">Ladiesfinger</div>
+    <div class="child9">Carrot</div>
+    <div class="child10">Peas</div>
+    <div class="child11">Pumpkin</div>
+    <div class="child12">Raddish</div>
+    </div>
+</body>
+</html>

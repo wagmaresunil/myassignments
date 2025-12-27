@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid7</title>
+    <style>
+        a{
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+      background-color: lightgray;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+        .parent {
+            display: grid;
+            height: 100vh;
+            gap: 20px;
+            grid-template-columns: repeat(2,1fr);
+            
+        }
+        .child1 {
+            background-color: blue;
+           
+        }
+        .child2 {
+            background-color: lightblue;
+            
+        }
+        .child3 {
+            background-color: red;
+        }
+        .child4 {
+            background-color: yellow;
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(2, 1fr);
+        } 
+        .child4a {
+            background-color: lawngreen;
+            grid-column: 1/3;
+        }
+        .child4b {
+            background-color: plum;
+        }
+        .child4c {
+            background-color: fuchsia;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Home</a>
+    <div class="parent">
+    <div class="child1">Doremon</div>
+    <div class="child2">Tom & Jerry</div>
+    <div class="child3">Shinchan</div>
+    <div class="child4">
+        <div class="child4a">Dora</div>
+        <div class="child4b">Haidi</div>
+        <div class="child4c">Bheem</div>
+    </div>
+    </div>
+</body>
+</html>

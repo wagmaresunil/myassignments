@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex9</title>
+     <style>
+        a{
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+      background-color: lightgray;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+        .parent {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+           
+        }
+        .child1 {
+            background-color: hotpink;
+            grid-column: 1/4;
+        }
+        .child2 {
+            background-color: indigo;
+            grid-row: 2/4;
+        }
+        .child3 {
+            background-color: khaki;
+            grid-column: 2/4;
+        }
+        .child4 {
+            background-color: slateblue;
+        }
+        .child5 {
+            background-color: sienna;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Home</a>
+    <div class="parent">
+    <div class="child1">Yutister</div>
+    <div class="child2">Bheema</div>
+    <div class="child3">Arjuna</div>
+    <div class="child4">Nakula</div>
+    <div class="child5">Sahadeva</div>
+    </div>
+</body>
+</html>

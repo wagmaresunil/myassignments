@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid8</title>
+     <style>
+        a{
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+      background-color: lightgray;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            height: 100vh;
+            gap: 20px;
+        }
+        .child1 {
+             background-color: darkgray;
+        }
+        .child2 {
+            background-color: gray;
+        }
+        .child3 {
+            background-color: blue;
+        }
+        .child4 {
+            background-color: red;
+        }
+        .child5 {
+            background-color: brown;
+        }
+        .child6 {
+            background-color: palegoldenrod;
+        }
+           .child7 {
+            background-color: gainsboro;
+        }
+        .child8 {
+            background-color: blanchedalmond;
+            grid-column: 3/6;
+        }
+        .child9 {
+            background-color: darkorange;
+            grid-column: 1/6;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Home</a>
+     <div class="parent">
+    <div class="child1">Mercury</div>
+    <div class="child2">Venus</div>
+    <div class="child3">Earth</div>
+    <div class="child4">Mars</div>
+    <div class="child5">Jupitor</div>
+    <div class="child6">Saturn</div>
+    <div class="child7">Uranus</div>
+    <div class="child8">Neptune</div>
+    <div class="child9">Sun</div>
+    </div>
+</body>
+</html>

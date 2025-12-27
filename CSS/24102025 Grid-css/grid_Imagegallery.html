@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Image Gallery</title>
+<style>
+*{
+    margin: 0;
+}
+.parent{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    gap: 10px;
+    grid-template-rows: repeat(3,195px);
+    grid-template-areas: 
+    'img1 img2 img3 img3'
+    'img4 img4 img3 img3'
+    'img5 img5 img6 img6';
+}
+
+.parent>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.parent>*{
+       background-color: lightblue;
+       border: 4px solid blue;
+}
+
+.img1{grid-area: img1;}
+.img2{grid-area: img2;}
+.img3{grid-area: img3;}
+.img4{grid-area: img4;}
+.img5{grid-area: img5;}
+.img6{grid-area: img6;}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="parent">
+        <img src="https://png.pngtree.com/png-clipart/20250104/original/pngtree-delicious-black-grapes-png-image_20004046.png" alt="" class="img1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyRIkEgXQ6prN8duYfvZmQB11kyhAwe2S58A&s" alt="" class="img2">
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2020/09/AN335-Watermelon-732x549-Thumb.jpg" alt="" class="img3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Orange-Fruit-Pieces.jpg/2560px-Orange-Fruit-Pieces.jpg" alt="" class="img4">
+        <img src="https://t4.ftcdn.net/jpg/15/75/50/17/360_F_1575501701_nEbAXKOBk3uExljMutugART4JxsETGjC.jpg" alt="" class="img5">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1RGfUSrAda30zY5J6XHxIsCeKiqYyFgMoCw&s" alt="" class="img6">
+        
+    </div>
+</body>
+</html>

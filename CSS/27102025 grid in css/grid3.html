@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid3</title>
+  <style>
+    a{
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+      background-color: lightgray;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    .parent{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      height: 100vh;
+      
+    }
+    .child1{
+      background-color: palegreen;
+      grid-column: 1/4;
+      
+    }
+    .child2{
+      background-color: palegoldenrod;
+    }
+    .child3{
+      background-color: paleturquoise;
+      grid-column: 2/4;
+    }
+    .child4{
+      background-color: palevioletred;
+      grid-column: 1/4;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html">Home</a>
+  <div class="parent">
+    <div class="child1">Chiranjeevi</div>
+    <div class="child2">Ram Charan</div>
+    <div class="child3">Allu Arjun</div>
+    <div class="child4">Varun Tej</div>
+    
+  </div>
+</body>
+</html>
