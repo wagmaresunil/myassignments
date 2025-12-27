@@ -1,0 +1,48 @@
+Text formatting tags
+insertion
+deletion
+strong
+bold
+italic
+emphasis
+big
+small
+superscript
+subsc
+-------------------------------------------------------------
+Text formatting tags
+insertion -> ins
+deletion -> del
+underline -> u
+strong -> str
+bold -> b
+italic -> i
+emphasis -> em
+big
+small
+superscript -> sup
+subscript -> sub
+abbreviation -> abbr
+mark
+-------------------------------------------------------------
+
+<ins> insertion tag </ins>
+<u> underline tag </u>
+<del> 300 </del> 400
+<b> bold </b>
+<strong> strong </strong>
+<i> italic </i>
+<em> emphasis </em>
+a <sup>3</sup>
+H<sub> 2 </sub> 0
+<big> big tag </big>
+<small> small tag </small>
+<mark> mark tag </mark>
+<abbr title="Hyper Text Markup Language"> HTML </abbr>
+<p> text <b> <u> formatting </u> </b> tags </p>
+<h1> heading </h1>
+-------------------------------------------------------------
+Behavior of Elements
+inline
+block
+nline-block
