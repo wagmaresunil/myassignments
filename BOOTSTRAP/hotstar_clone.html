@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotstar Clone</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <style>
+        .main{
+            display: flex;
+            color: white;
+            justify-content: space-between;
+            background-image: linear-gradient(to right, blue, rgb(127, 200, 16), rgb(190, 96, 37));
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index:1
+        }
+
+        h3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
+        .active{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-right: 20px;
+            list-style: none;
+            gap:20px;
+        }
+        a{
+          color: white;
+          text-decoration: none;
+        }
+
+        a:hover{
+                text-decoration: underline;
+                color: rgb(74, 209, 40);
+                transition: all 0.2s ease-in-out;
+        }
+        .page1{
+            position: relative;
+            background-image: url(https://im.jdmagicbox.com/comp/jd_social/news/2019apr09/image-1531748573070-tif93439qc.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .page1 h1{
+            position: absolute;
+            top:200px;
+            left: 500px;
+            color:white;
+        }
+        .page1 p{
+            position: absolute;
+            top:250px;
+            left:450px;
+            line-height: 1.3em;
+            color: white;
+            padding-top: 2px;
+        }
+        .page1 button{
+          color: white;
+          background-color: black;
+          border: 2px solid white;
+          font-size: 20px;
+            position: absolute;
+            top:300px;
+            left:630px;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        .page1:hover button{
+            background-color: blue;
+            border: 2px solid white;
+            color: white;
+            transform: scale(1.1);
+            transition: all 0.2s ease-in-out;
+        }
+        .card{
+          background-color: black; 
+          color: white;
+        }
+        .card:hover{
+            box-shadow: 0px 0px 30px white;
+            transform: scale(1.04);
+            background-image: #000;
+            color:white
+        }
+        .card h5{
+            color: burlywood;
+        }
+  
+          .page3 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;  
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 5px;
+          }
+          .page3 button {
+            background-image: linear-gradient(to bottom right, rgb(31, 96, 153));
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 20px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.4s linear;
+            transform: scale(1.08);
+          }
+          .page3 button:hover {
+              background-image: linear-gradient(to right, rgb(59, 141, 42) );
+              transform: scale(1.20);
+              transition: all 0.6s ease-in-out;
+          }
+         .footer{
+            background-color: #000;
+            color: white;
+            height: 80px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .both{
+            background-image: radial-gradient(red,blue);
+          }
+
+          img{
+                height: 100px;
+                width: 100px;
+          }
+
+</style>
+</head>
+<body>
+    <nav class="main">
+        <h3>HOTSTAR💫</h3>
+            <ul class="active">
+                <li class="nav"><a href="#Home">Home</a></li>
+                <li class="nav"><a href="#Movies">Movies</a></li>
+                <li class="nav"><a href="#Shows">Shows</a></li>
+                <li class="nav"><a href="#Sports">Sports</a></li>
+                <li class="nav"><a href="#Login">Log in</a></li>
+            </ul>
+    </nav>
+
+    <section class="page1">
+        <h1>Unlimited Entertainment</h1>
+        <p><b>Watch your favourite shows,movies,and livesports anytime,anywhere.</b></p>
+        <button>Explore Now</button>
+    </section>
+
+    <div class="both">
+       <h3 class="pt-4 text-light">Trending Movies🔥</h3>
+    <section class="d-flex flex-row justify-content-between pt-3 ms-2" class="images1234">
+        <div class="card h-25 text-center ms-3" style="width: 18rem;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNRvwdGsYnOMn_kLd9sRorIrDfTc2rwRHqXQ&s" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Pokiri - 2006</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-outline-info text-decoration-none">Watch Now</a>
+  </div>
+</div>
+
+<div class="card h-25 text-center" style="width: 18rem;">
+  <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00002682-hqagcrkqzm-landscape.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Desamuduru - 2007</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-outline-warning text-decoration-none">Watch Now</a>
+  </div>
+</div>
+
+<div class="card h-25 text-center" style="width: 18rem;">
+  <img src="https://images.moneycontrol.com/static-mcnews/2025/09/20250928134656_ram-charan-ps-chirutha.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Chirutha - 2007</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-outline-danger text-decoration-none">Watch Now</a>
+  </div>
+</div>
+
+<div class="card h-25 text-center me-3" style="width: 18rem;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_dezLuY1LNavm0whY-J-We0GRgc-9Lvn7BA&s" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Tulasi - 2007</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-outline-primary text-decoration-none">Watch Now</a>
+  </div>
+</div>
+</section>
+
+<h3 class="text-light">Popular Categories🎊</h3>
+<section class="page3">
+  <button>Action/Thriller</button>
+  <button>Action/Drama/Romantic</button>
+  <button>Action/Drama/Romanace</button>
+  <button>Action/Drama/Family</button>
+</section>
+    </div>
+
+<footer class="footer">
+  <p>&copy; 2025 Hotstar Clone | All Right Reserved</p>
+</footer>
+</body>
+</html>
